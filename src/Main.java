@@ -18,6 +18,7 @@ public class Main {
             arrSum += arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + arrSum + " рублей");
+        System.out.println();
 
 
         // Задание 2
@@ -34,10 +35,12 @@ public class Main {
         }
         System.out.println("Максимальная сумма трат за день " + arrMax / 30 + "рублей");
         System.out.println("Минимальная сумма трат за день " + arrMin / 30 + "рублей");
+        System.out.println();
 
         // Задание 3
 
         System.out.println("В среднем компания тратит в день " + arrSum / 30);
+        System.out.println();
 
 
         // Задание 4
@@ -45,6 +48,7 @@ public class Main {
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
    for (int a = reverseFullName.length-1; a >= 0;  a--) {
     System.out.print(reverseFullName[a]);
+
 
 
 
