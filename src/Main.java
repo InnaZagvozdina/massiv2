@@ -39,7 +39,7 @@ public class Main {
 
         // Задание 3
 
-        System.out.println("В среднем компания тратит в день " + arrSum / 30);
+        System.out.println("В среднем компания тратит в день " + arrSum / 30.0f);
         System.out.println();
 
 
