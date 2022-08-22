@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
         int arrSum = 0;
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arrSum += arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + arrSum + " рублей");
@@ -23,18 +23,21 @@ public class Main {
 
         // Задание 2
 
-        int arrMin = 0;
-        int arrMax = 0;
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] < arr[i + 1]) {
-                arrMin = arrMin + arr[i];
+        var salaries = generateRandomArray();
+
+
+        int arrMin = salaries[0];
+        int arrMax = salaries[0];
+        for (int i = 0; i < salaries.length; i++) {
+            if (arrMax < salaries[i]) {
+                arrMax = salaries[i];
             }
-            if (arr[i] > arr[i + 1]) {
-                arrMax = arrMax + arr[i];
+            if (arrMin > salaries[i]) {
+                arrMin = salaries[i];
             }
         }
-        System.out.println("Максимальная сумма трат за день " + arrMax / 30 + "рублей");
-        System.out.println("Минимальная сумма трат за день " + arrMin / 30 + "рублей");
+        System.out.println("Максимальная сумма трат за день " + arrMax + "рублей");
+        System.out.println("Минимальная сумма трат за день " + arrMin + "рублей");
         System.out.println();
 
         // Задание 3
@@ -46,17 +49,15 @@ public class Main {
         // Задание 4
 
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-   for (int a = reverseFullName.length-1; a >= 0;  a--) {
-    System.out.print(reverseFullName[a]);
+        for (int a = reverseFullName.length - 1; a >= 0; a--) {
+            System.out.print(reverseFullName[a]);
 
-
-
-
-            }
 
         }
 
-            }
+    }
+
+}
 
 
 
